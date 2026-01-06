@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>
+        Happy Birthday! <br>
+        <span>My Love 💗</span> 🎂
+    </h1>
+
+    <p class="message">
+        Today isn’t just your birthday.<br>
+        It’s the day the world got a little more beautiful.<br>
+        It’s the day life wrapped perfection into one person —
+        and gave it to this world.
+    </p>
+
+    <button onclick="reveal()">Click for a surprise 💌</button>
+
+    <p class="special-line">This is specially for you 🎶</p>
+
+
+<audio id="bgMusic" preload="auto">
+    <source src="music1.wav" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bgMusic').play()">Play Music 🎵</button>
+
+
+<script>
+function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+}
+</script>
+
+
+    <div id="surprise" class="hidden">
+        <p>
+            You didn’t walk into my life as a surprise —<br>
+            you became my <strong>perfect gift</strong>.<br><br>
+            In a world full of noise, you feel like home.<br>
+            And every day with you feels like something worth celebrating.
+        </p>
+        <p class="sign">— With all my heart ❤</p>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

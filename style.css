@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s ease;
+}
+
+h1 span {
+    color: #e63946;
+}
+
+.message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d62839;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.sign {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.heart {
+    position: fixed;
+    bottom: 0;
+    color: #e63946;
+    font-size: 20px;
+    animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-600px) scale(1.5);
+        opacity: 0;
+    }
+}
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.special-line {
+    text-align: center;
+    font-size: 16px;
+    color: #e63946;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
